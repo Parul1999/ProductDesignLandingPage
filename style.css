@@ -20,15 +20,16 @@ header {
 
 nav {
   display: flex;
-  gap: 2rem;
-  align-items: center;
-  width: 40%;
-  cursor: pointer;
-  z-index: 1;
+    gap: 2rem;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1;
+    justify-content: end;
 }
 
 a.nav-item {
   color: #ffffff;
+  display: flex;
 }
 
 a.nav-item:hover{
@@ -115,14 +116,14 @@ a.nav-item:hover{
   display: grid;
   gap: 6rem;
   text-align: center;
-  grid-template-columns: 20rem 20rem;
-  grid-template-rows: 7rem 7rem;
+  grid-template-columns: repeat(2, minmax(400px, 1fr));
 }
 .accountability_card{
   background-color: #1e1e1e;
   display: flex;
     flex-flow: column;
     justify-content: center;
+    padding: 1rem;
 }
 .accountability_card>h1{
   font-size: 3em;
@@ -131,15 +132,15 @@ a.nav-item:hover{
 }
 .featured_projects_container{
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(8, 1fr); 
   grid-gap: 2.5rem;
-  grid-auto-rows: 100px;
+  /* grid-auto-rows: 100px; */
   grid-template-areas:
       ". a a a . b b b ."
       ". a a a . b b b ."
       ". . . . . . . . ."
       ". c c c . d d d ."
-      ". c c c . d d d .";
+      ". c c c . d d d ."; 
  margin: 0 10rem 10rem 0;
 }
 .card_one{
@@ -197,4 +198,58 @@ footer{
   display: flex;
     gap: 30rem;
     padding: 3rem 0 3rem 3rem;
+}
+@media only screen and (max-width:1134px) {
+  .accountability_numbers{
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+}
+@media only screen and (max-width:769px) {
+  .accountability_numbers{
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+  }
+}
+@media only screen and (max-width:734px) {
+  .cards_container{
+    flex-wrap: wrap-reverse;
+  }
+  .accountability_container{
+    flex-wrap: wrap;
+  }
+  .featured_desc{
+    flex-wrap: wrap;
+    gap: 1rem;
+    text-align: center;
+  }
+   .featured_projects_container{
+    grid-template-areas:
+    ". a a a a a a a a"
+    ". . . . . . . . ."
+    ". b b b b b b b b"
+    ". . . . . . . . ."
+    ". c c c c c c c c"
+    ". . . . . . . . ."
+    ". d d d d d d d d";
+    margin: 0;
+  } 
+  .projects_container{
+    flex-wrap: wrap;
+  }
+  footer{
+    gap: 0;
+    justify-content: space-around;
+    align-items: center;
+  }
+  nav{
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  .nav_items_container{
+    gap: 1rem;
+  }
+}
+@media only screen and (min-width:2560px) {
+.projects_container{
+  margin: 30rem auto;
+}
 }
