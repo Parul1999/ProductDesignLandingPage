@@ -1,0 +1,200 @@
+body,
+p,
+ul,h3,h1,h5 {
+  margin: 0;
+
+}
+button{
+  cursor: pointer;
+}
+/* Navbar */
+header {
+  padding:2%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  width: 40%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+a.nav-item {
+  color: #ffffff;
+}
+
+a.nav-item:hover{
+  color: #c91b28;
+}
+
+/* End of Navbar */
+.dark_section{
+  background-color: #111111;
+  color: #ffffff;
+}
+.grey_section{
+  background-color: #181818;
+  color: #ffffff;
+}
+.hero-container{
+  display: flex;
+  align-items: center;
+}
+.hero-img{
+  width: 100%;
+}
+.hero-desc>h3{
+  color: #c91b28;
+}
+.hero-desc>h1{
+  font-size: 2.5em;
+  margin: 0.6rem 0;
+}
+.btn{
+  background-color: #c91b28;
+  color: #ffffff;
+  padding: 1rem 3rem;
+}
+.btn-about{
+  margin: 1rem 0;
+}
+.cards_container{
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  padding: 3rem 0;
+}
+.feature_card{
+  flex-basis: 15rem;
+  background-color: #1e1e1e;
+  padding: 1rem;
+  align-self: center;
+  cursor: pointer;
+}
+.know_more_container{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #c91b28;
+}
+.know_more_container>div{
+  width: 10%;
+}
+.know_more_container>div>img{
+  width: 100%;
+}
+.feature_card:hover *{
+  color: #ffffff;
+  filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(235deg) brightness(117%) contrast(100%);
+}
+.feature_card:hover{
+  background-color: #c91b28;
+}
+.accountability_container{
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  padding: 3rem 0;
+}
+.accountability_years{
+  text-align: center;
+}
+.accountability_years>h1{
+  font-size: 5em;
+  color: #c91b28;
+}
+.accountability_numbers{
+  display: grid;
+  gap: 6rem;
+  text-align: center;
+  grid-template-columns: 20rem 20rem;
+  grid-template-rows: 7rem 7rem;
+}
+.accountability_card{
+  background-color: #1e1e1e;
+  display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.accountability_card>h1{
+  font-size: 3em;
+  color: #c91b28;
+  margin-bottom: 2%;
+}
+.featured_projects_container{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 2.5rem;
+  grid-auto-rows: 100px;
+  grid-template-areas:
+      ". a a a . b b b ."
+      ". a a a . b b b ."
+      ". . . . . . . . ."
+      ". c c c . d d d ."
+      ". c c c . d d d .";
+ margin: 0 10rem 10rem 0;
+}
+.card_one{
+  grid-area: a;
+}
+.card_two{
+  grid-area: b;
+}
+.card_three{
+  grid-area: c;
+}
+.card_four{
+  grid-area: d;
+}
+.featured_desc{
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem 0;
+}
+.featured_img{
+  width: 80%;
+}
+.featured_img>img{
+  width: 100%;
+  padding: 10%;
+  background-color: #1e1e1e;
+}
+.know_more_img_div{
+  width: 2% !important;
+}
+.projects_container{
+  display: flex;
+    justify-content: space-around;
+    padding: 3rem;
+    width: 50%;
+    margin: auto;
+    align-items: center;
+    gap: 5rem;
+}
+.projects_heading{
+  font-size: 3em;
+}
+.nav_items_container{
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  padding: 3rem 0;
+  cursor: pointer;
+}
+.contacts{
+  display: flex;
+  gap: 2rem;
+}
+footer{
+  display: flex;
+    gap: 30rem;
+    padding: 3rem 0 3rem 3rem;
+}
